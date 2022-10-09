@@ -63,6 +63,9 @@ RIGHT JOIN adress adr --RIGHT - Mostra todos do lado direito independente de ter
 
     
 --AULA 39 -  Adicionando UNION - Ele junta dois selects no mesmo resulatado
+--UNION
+--O operador UNION combina os resultados de duas ou mais queries em um único result set, retornando todas as linhas pertencentes a todas as queries envolvidas na execução. Para utilizar o UNION, o número e a ordem das colunas precisam ser idênticos em todas as queries e os data types precisam ser compatíveis.
+--O operador UNION, por default, executa o equivalente a um SELECT DISTINCT no result set final. Em outras palavras, ele combina o resultado de execução das duas queries e então executa um SELECT DISTINCT a fim de eliminar as linhas duplicadas. Este processo é executado mesmo que não hajam registros duplicados.
 SELECT   
     cus.customer_id,  
     cus.first_name, 
